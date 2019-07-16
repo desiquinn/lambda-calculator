@@ -12,9 +12,9 @@ const Specials = () => {
 
   return (
     <div>
-      {specialState.map((special) => (
-        <SpecialButton special={special} />
-      ))}
+      {specialState.map((special) => {
+        return <SpecialButton special={special} />
+      })}
 
 
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
@@ -23,3 +23,5 @@ const Specials = () => {
     </div>
   );
 };
+
+export default Specials;

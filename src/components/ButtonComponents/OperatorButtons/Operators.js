@@ -12,13 +12,11 @@ const Operators = () => {
 
   return (
     <div>
-      {operatorState.map((operator) => (
-        <OperatorButton 
+      {operatorState.map((operator) => {
+        return <OperatorButton 
           operator={operator}
-          char={char}
-          value={value}
         />
-      ))}
+      })}
 
       {/* STEP 3 - Use .map() to iterate over your array data and return a button
        component matching the name on the provided file. Pass
