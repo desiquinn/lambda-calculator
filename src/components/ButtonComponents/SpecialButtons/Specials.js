@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 //import any components needed
+import SpecialButton from "./SpecialButton"
 
 //Import your array data to from the provided data file
 import { specials } from "../../../data.js"
@@ -12,7 +13,7 @@ const Specials = () => {
   return (
     <div>
       {specialState.map((special) => (
-        <SpecialButtons special={special} />
+        <SpecialButton special={special} />
       ))}
 
 
